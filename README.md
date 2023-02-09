@@ -37,13 +37,13 @@ The syntax for the icon component is:
 
 The delimiter is the pipe symbol `|`.
 
-`ICON` = the name of the icon e.g. `iconoir-peace-hand`
-`COLOR`= the CSS color of the icon e.g. `purple`
-`W`= the CSS width of the icon e.g. `1em`
-`H`= the CSS height of the icon e.g. `1em`
-`STYLE` = the CSS rule(s) for the icon component e.g. `float:right;`
+ICON = the name of the icon e.g. iconoir-peace-hand
+COLOR= the CSS color of the icon e.g. purple
+W= the CSS width of the icon e.g. 1em
+H= the CSS height of the icon e.g. 1em
+STYLE = the CSS rule(s) for the icon component e.g. float:right;
 
-ONLY the `ICON` name is required. ALL others optional.
+ONLY the ICON name is required. ALL others optional.
 
 `~![iconoir-peace-hand|purple|1em|1em|float:right;]`
 ```
