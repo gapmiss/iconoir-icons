@@ -14,7 +14,7 @@ A plugin for creating & displaying customized SVG [Iconoir Icons](https://iconoi
 > Copyright (c) 2023 Luca Burgio - https://iconoir.com
 > License - https://github.com/lucaburgio/iconoir/blob/main/LICENSE (Code: MIT License)
 
---
+---
 
 ## features
 
