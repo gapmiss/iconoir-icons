@@ -1,0 +1,40 @@
+/*******
+* 
+* Lists
+* 
+*******/
+/* any <UL>,<OL> w/ a .special-iconoir-list-callout class assinged to a <LI> */
+ol.has-list-bullet:has(li.special-iconoir-list-callout),
+ul.has-list-bullet:has(li.special-iconoir-list-callout) {
+  border: 1px solid var(--interactive-accent);
+  border-radius: 6px;
+  padding-block:10px;
+}
+li.special-iconoir-list-callout {
+  box-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  0 2px 4px 0 rgba(var(--color-purple-rgb), 0.3),
+  0 1px 1.5px 0 rgba(var(--color-purple-rgb), 0.3),
+  0 1px 2px 0 rgba(var(--color-purple-rgb), 0.3),
+  0 0 0 0 transparent;
+  /* padding-left:1.77em; */
+  margin: 13px 0 !important;
+  background-color:rgba(var(--color-purple-rgb), 0.10);
+  border-radius: 4px;
+}
+.list-bullet {
+  /* display: none; */
+}
+/*******
+* 
+* Tasks
+* 
+*******/
+li.task-list-item {
+  /* border: 2px dashed var(--color-base-50) !important; */
+}
+li.task-list-item > span.tasks-list-text:has(iconoir-icon) {
+  color:var(--text-normal);
+  border: 2px dashed var(--color-base-50) !important;
+  border-radius: 4px;
+  padding: 3px;
+}
