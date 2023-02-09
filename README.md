@@ -8,9 +8,13 @@ A plugin for creating & displaying customized SVG [Iconoir Icons](https://iconoi
 > 
 > This is the 1st released version (beta) of this plugin. The plugin does not delete or remove any data in a note, but does change the display in the `reading` view. It has NOT been tested w/ `Live Preview` and it is presumed that there are display issues when using `Live Preview`.  Other caveats are listed below.
 
+---
+
 > Iconoir
 > Copyright (c) 2023 Luca Burgio - https://iconoir.com
 > License - https://github.com/lucaburgio/iconoir/blob/main/LICENSE (Code: MIT License)
+
+--
 
 ## features
 
@@ -183,9 +187,9 @@ strong {
 
 ## plugin installation
 
-1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases)
+1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/0.0.1/iconoir-icons-v0.0.1.zip)
 2. uncompress the downloaded archive
-3. move the enclosed `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
+3. move the `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
 4.  Settings > Community plugins > reload **Installed plugins**
 5.  enable plugin
 
