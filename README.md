@@ -68,7 +68,6 @@ Alpha Bravo `~![iconoir-antenna|green|22px|22px]` Charlie Delta `~![iconoir-wris
 
 #### results
 
-![[assets/block.png]]
 ![screenshot of block section](assets/block.png)
 
 ### lists
