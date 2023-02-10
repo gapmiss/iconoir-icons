@@ -39,7 +39,6 @@ export function buildPostProcessor(): MarkdownPostProcessor {
 	return (el) => {
     el.findAll("code").forEach((code) => {
       let text = code.innerText.trim();
-      console.log(text);
       if (text.startsWith('~![')) {
         let frag = text.substring(2).trim();
         if (frag.endsWith(']')) {
