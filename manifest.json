@@ -3,7 +3,7 @@
 	"name": "Iconoir Icons",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "A plugin for creating & displaying customized SVG Iconoir icons.",
+	"description": "Create & display customized SVG Iconoir icons.",
 	"author": "@gapmiss",
 	"authorUrl": "https://gihub.com/gapmiss",
 	"isDesktopOnly": false
