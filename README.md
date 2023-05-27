@@ -4,9 +4,7 @@ A plugin for creating & displaying customized SVG [Iconoir Icons](https://iconoi
 
 > ⚠️ NOTICE
 > 
-> Iconoir
-> Copyright (c) 2023 Luca Burgio - https://iconoir.com
-> License - https://github.com/lucaburgio/iconoir/blob/main/LICENSE (Code: MIT License)
+> Copyright (c) 2023 Luca Burgio - https://iconoir.com; License - https://github.com/lucaburgio/iconoir/blob/main/LICENSE (Code: MIT License)
 
 ## features
 
@@ -29,13 +27,13 @@ The syntax for the icon component is:
 
 The delimiter is the pipe symbol `|`.
 
-ICON = the name of the icon e.g. iconoir-peace-hand
-COLOR= the CSS color of the icon e.g. purple
-W= the CSS width of the icon e.g. 1em
-H= the CSS height of the icon e.g. 1em
-STYLE = the CSS rule(s) for the icon component e.g. float:right;
+ICON   = the name of the icon e.g. iconoir-peace-hand
+COLOR  = the CSS color of the icon e.g. purple
+W      = the CSS width of the icon e.g. 1em
+H      = the CSS height of the icon e.g. 1em
+STYLE  = the CSS rule(s) for the icon component e.g. float:right;
 
-ONLY the ICON name is required. ALL others optional.
+ONLY the ICON name is required. ALL others optional, but cannot be empty.
 
 `~![iconoir-peace-hand|purple|1em|1em|float:right;]`
 ```
@@ -185,7 +183,7 @@ From Obsidian's settings or preferences:
 
 or:
 
-1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/0.0.1/iconoir-icons-v0.0.1.zip)
+1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/1.0.0/iconoir-icons-v1.0.0.zip)
 2. uncompress the downloaded archive
 3. move the `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
 4.  Settings > Community plugins > reload **Installed plugins**
