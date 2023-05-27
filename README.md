@@ -183,7 +183,7 @@ From Obsidian's settings or preferences:
 
 or:
 
-1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/1.0.0/iconoir-icons-v1.0.0.zip)
+1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/1.0.0/iconoir-icons.zip)
 2. uncompress the downloaded archive
 3. move the `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
 4.  Settings > Community plugins > reload **Installed plugins**
