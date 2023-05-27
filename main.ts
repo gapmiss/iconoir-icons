@@ -3,7 +3,7 @@ import { Plugin, TFile,
   EditorSuggestTriggerInfo, 
   EditorSuggest, EditorSuggestContext,
   MarkdownPostProcessor } from 'obsidian';
-import {html, LitElement} from 'lit';
+import { html, LitElement } from 'lit';
 import { iconoir } from './iconoirNames';
 
 enum ComponentChoice {
@@ -123,13 +123,17 @@ class IconoirSuggester extends EditorSuggest<string> {
 
 	selectSuggestion(suggestion: string): void {
 		if(this.context) {
-			// (this.context.editor as Editor).replaceRange('`~!['+iconoir[suggestion]+'|currentColor]`', this.context.start, this.context.end);
 			(this.context.editor as Editor).replaceRange('`~!['+iconoir[suggestion]+']`', this.context.start, this.context.end);
 		}
 	}
 }
 
 class IconoirIcon extends LitElement {
+  name: string;
+  stroke: string;
+  width: string;
+  height: string;
+  css: string;
   static get properties() {
 	  return {
       name:   { type: String },

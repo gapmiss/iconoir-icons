@@ -1,11 +1,10 @@
 {
 	"id": "iconoir-icons",
 	"name": "Iconoir Icons",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "A plugin for creating & displaying customized SVG Iconoir Icons in Obsidian.",
+	"description": "A plugin for creating & displaying customized SVG Iconoir icons.",
 	"author": "@gapmiss",
 	"authorUrl": "https://gihub.com/gapmiss",
-	"fundingUrl": "https://obsmd.io",
 	"isDesktopOnly": false
 }

@@ -714,6 +714,14 @@ var IconoirSuggester = class extends import_obsidian.EditorSuggest {
   }
 };
 var IconoirIcon = class extends s4 {
+  constructor() {
+    super();
+    this.name = "iconoir-1st-medal";
+    this.stroke = "currentColor";
+    this.width = "1.2em";
+    this.height = "1.2em";
+    this.css = "";
+  }
   static get properties() {
     return {
       name: { type: String },
@@ -722,14 +730,6 @@ var IconoirIcon = class extends s4 {
       height: { type: String },
       css: { type: String }
     };
-  }
-  constructor() {
-    super();
-    this.name = "iconoir-1st-medal";
-    this.stroke = "currentColor";
-    this.width = "1.2em";
-    this.height = "1.2em";
-    this.css = "";
   }
   render() {
     return x`
