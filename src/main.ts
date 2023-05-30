@@ -17,9 +17,10 @@ export default class IconoirPlugin extends Plugin {
   async litBlockHandler(type: ComponentChoice, source: string, el: HTMLElement, ctx: any): Promise<any> {
 		const element:any = document.createRange().createContextualFragment(source);
 		let input = element
-		const blk = el.createEl("div", {cls: "lit-block"});
-		let inputElement: HTMLElement;
-		inputElement = blk.createEl("div", {text: input, cls: "lit-innerblock"});
+    if (el.instanceOf(HTMLElement)) {
+      const blk = el.createEl("div", {cls: "lit-block"});
+      let inputElement: HTMLElement = blk.createEl("div", {text: input, cls: "lit-innerblock"}); 
+    }
 	}
 
 	async onload() {
@@ -61,7 +62,7 @@ export function buildPostProcessor(): MarkdownPostProcessor {
             code.parentElement?.addClass('special-iconoir-td-callout');
             code.parentElement?.setAttr("data-icon", arr[0]);
           }
-          var newEl   = document.createElement("iconoir-icon");
+          var newEl = document.createElement("iconoir-icon");
           newEl.setAttribute('name',arr[0]);
           newEl.setAttribute('aria-label',arr[0]+' icon');
           newEl.setAttribute('aria-label-position', 'top');

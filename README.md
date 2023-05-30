@@ -191,7 +191,7 @@ or:
 
 or:
 
-1.  download `main.js`, `manifest.json` & `styles.css`
+1.  download `dist/main.js`, `manifest.json` & `styles.css`
 2.  create a new folder `/path/to/vault/.obsidian/plugins/iconoir-icons`
 3.  move all 3 files to `/path/to/vault/.obsidian/plugins/iconoir-icons`
 4.  Settings > Community plugins > reload **Installed plugins**
