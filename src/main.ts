@@ -29,6 +29,10 @@ export default class IconoirPlugin extends Plugin {
     this.registerMarkdownPostProcessor(buildPostProcessor());
     this.iconoirNames = Object.keys(iconoir);
     this.isListItem = false;
+    let isRegistered = window.customElements.get('iconoir-icon');
+    if (isRegistered === undefined) {
+      window.customElements.define('iconoir-icon', IconoirIcon);
+    }
     console.log('iconoir-icons loaded');
   }
 	onunload() {
@@ -62,7 +66,7 @@ export function buildPostProcessor(): MarkdownPostProcessor {
             code.parentElement?.addClass('special-iconoir-td-callout');
             code.parentElement?.setAttr("data-icon", arr[0]);
           }
-          var newEl = document.createElement("iconoir-icon");
+          let newEl = document.createElement("iconoir-icon");
           newEl.setAttribute('name',arr[0]);
           newEl.setAttribute('aria-label',arr[0]+' icon');
           newEl.setAttribute('aria-label-position', 'top');
@@ -94,8 +98,8 @@ class IconoirSuggester extends EditorSuggest<string> {
 	}
 
 	onTrigger(cursor: EditorPosition, editor: Editor, _: TFile): EditorSuggestTriggerInfo | null {
-    let foo='bar';
-		if (foo==='bar') {
+    // let foo='bar';
+		// if (foo==='bar') {
 			const sub = editor.getLine(cursor.line).substring(0, cursor.ch);
       const match = sub.match(/&&\S+$/)?.first();
 			if (match) {
@@ -108,7 +112,7 @@ class IconoirSuggester extends EditorSuggest<string> {
 					query: match,
 				}
 			}
-		}
+		// }
 		return null;
 	}
 
@@ -180,7 +184,4 @@ class IconoirIcon extends LitElement {
 	}
 }
 
-var isRegistered = window.customElements.get('iconoir-icon');
-if (isRegistered === undefined) {
-  window.customElements.define('iconoir-icon', IconoirIcon);
-}
+

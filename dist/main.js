@@ -623,6 +623,10 @@ var IconoirPlugin = class extends import_obsidian.Plugin {
     this.registerMarkdownPostProcessor(buildPostProcessor());
     this.iconoirNames = Object.keys(iconoir);
     this.isListItem = false;
+    let isRegistered = window.customElements.get("iconoir-icon");
+    if (isRegistered === void 0) {
+      window.customElements.define("iconoir-icon", IconoirIcon);
+    }
     console.log("iconoir-icons loaded");
   }
   onunload() {
@@ -654,7 +658,7 @@ function buildPostProcessor() {
             (_j = code.parentElement) == null ? void 0 : _j.addClass("special-iconoir-td-callout");
             (_k = code.parentElement) == null ? void 0 : _k.setAttr("data-icon", arr[0]);
           }
-          var newEl = document.createElement("iconoir-icon");
+          let newEl = document.createElement("iconoir-icon");
           newEl.setAttribute("name", arr[0]);
           newEl.setAttribute("aria-label", arr[0] + " icon");
           newEl.setAttribute("aria-label-position", "top");
@@ -683,20 +687,17 @@ var IconoirSuggester = class extends import_obsidian.EditorSuggest {
   }
   onTrigger(cursor, editor, _2) {
     var _a;
-    let foo = "bar";
-    if (foo === "bar") {
-      const sub = editor.getLine(cursor.line).substring(0, cursor.ch);
-      const match = (_a = sub.match(/&&\S+$/)) == null ? void 0 : _a.first();
-      if (match) {
-        return {
-          end: cursor,
-          start: {
-            ch: sub.lastIndexOf(match),
-            line: cursor.line
-          },
-          query: match
-        };
-      }
+    const sub = editor.getLine(cursor.line).substring(0, cursor.ch);
+    const match = (_a = sub.match(/&&\S+$/)) == null ? void 0 : _a.first();
+    if (match) {
+      return {
+        end: cursor,
+        start: {
+          ch: sub.lastIndexOf(match),
+          line: cursor.line
+        },
+        query: match
+      };
     }
     return null;
   }
@@ -759,10 +760,6 @@ var IconoirIcon = class extends s4 {
     `;
   }
 };
-var isRegistered = window.customElements.get("iconoir-icon");
-if (isRegistered === void 0) {
-  window.customElements.define("iconoir-icon", IconoirIcon);
-}
 /**
  * @license
  * Copyright 2017 Google LLC

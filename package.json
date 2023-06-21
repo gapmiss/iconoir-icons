@@ -1,6 +1,6 @@
 {
 	"name": "iconoir-icons",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Bespoken Iconoir icons for Obsidian",
 	"main": "main.js",
 	"scripts": {
