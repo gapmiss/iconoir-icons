@@ -1,10 +1,10 @@
 {
 	"id": "iconoir-icons",
 	"name": "Iconoir Icons",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Create & display customized SVG Iconoir icons.",
 	"author": "@gapmiss",
-	"authorUrl": "https://gihub.com/gapmiss",
+	"authorUrl": "https://github.com/gapmiss",
 	"isDesktopOnly": false
 }

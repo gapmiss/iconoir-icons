@@ -1,6 +1,6 @@
 import esbuild from "esbuild";
 import process from "process";
-import builtins from 'builtin-modules'
+import { builtinModules } from "module";
 
 const banner =
 `/*
@@ -31,12 +31,12 @@ esbuild.build({
 		'@lezer/common',
 		'@lezer/highlight',
 		'@lezer/lr',
-		...builtins],
+		...builtinModules],
 	format: 'cjs',
 	watch: !prod,
 	target: 'es2018',
 	logLevel: "info",
 	sourcemap: prod ? false : false,
 	treeShaking: true,
-	outfile: './dist/main.js',
+	outfile: 'main.js',
 }).catch(() => process.exit(1));
