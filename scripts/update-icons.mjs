@@ -31,18 +31,17 @@ console.log("Updated src/iconoirNames.ts");
 const cssContent = readFileSync(cssSource, "utf-8");
 const pluginCss = `
 /* Plugin-specific styles */
-.iconoir-icon-element {
+.obsidian-iconoir-icon {
   display: inline-flex;
   vertical-align: middle;
 }
 
-.iconoir-icon-inner {
-  display: block;
-  mask-size: cover;
-  -webkit-mask-size: cover;
+/* Override iconoir defaults with custom properties when set */
+.obsidian-iconoir-icon i[class^='iconoir-']::before,
+.obsidian-iconoir-icon i[class*=' iconoir-']::before {
   background: var(--iconoir-stroke, currentColor);
-  width: var(--iconoir-width, 1.2em);
-  height: var(--iconoir-height, 1.2em);
+  width: var(--iconoir-width, 1em);
+  height: var(--iconoir-height, 1em);
 }
 
 .icon-suggester-container {
@@ -51,7 +50,7 @@ const pluginCss = `
   gap: 8px;
 }
 
-.iconoir-icon-name {
+.suggester-icon-name {
   font-family: var(--font-monospace);
 }
 `;

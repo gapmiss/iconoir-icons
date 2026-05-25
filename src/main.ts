@@ -105,7 +105,8 @@ class IconoirSuggester extends EditorSuggest<string> {
 
   renderSuggestion(suggestion: string, el: HTMLElement): void {
     const outer = el.createDiv({ cls: "icon-suggester-container" });
-    outer.createDiv({ cls: "iconoir-icon-name" }).setText(suggestion);
+    outer.createEl("i", { cls: `iconoir-${suggestion}` });
+    outer.createDiv({ cls: "suggester-icon-name" }).setText(suggestion);
   }
 
   selectSuggestion(suggestion: string): void {
@@ -139,21 +140,19 @@ class IconoirIcon extends HTMLElement {
     const width = this.getAttribute("width") ?? "1.2em";
     const height = this.getAttribute("height") ?? "1.2em";
 
-    this.addClass("iconoir-icon-element");
-    this.setCssProps({
-      "--iconoir-stroke": stroke,
-      "--iconoir-width": width,
-      "--iconoir-height": height,
-    });
+    this.classList.add("obsidian-iconoir-icon");
 
     if (!this.querySelector("i")) {
-      const icon = createEl("i");
+      const icon = activeDocument.createElement("i");
       this.appendChild(icon);
     }
 
-    const icon = this.querySelector("i");
+    const icon = this.querySelector("i") as HTMLElement;
     if (icon) {
-      icon.className = `iconoir-icon-inner ${name}`;
+      icon.className = name;
+      icon.style.setProperty("--iconoir-stroke", stroke);
+      icon.style.setProperty("--iconoir-width", width);
+      icon.style.setProperty("--iconoir-height", height);
     }
   }
 }
