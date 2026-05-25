@@ -38,10 +38,6 @@ ONLY the ICON name is required. ALL others optional, but cannot be empty.
 `~![iconoir-peace-hand|purple|1em|1em|float:right;]`
 ```
 
-## examples
-
-See the `examples` directory for additional sample code.
-
 ### basic block
 
 ```markdown
