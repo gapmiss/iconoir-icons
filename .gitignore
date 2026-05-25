@@ -11,4 +11,5 @@ node_modules/
 .DS_Store
 
 main.js
+data.json
 .claude
