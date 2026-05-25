@@ -174,30 +174,16 @@ strong {
 
 From Obsidian's settings or preferences:
 
-1. ~~Community Plugins > Browse~~
-2. ~~Search for "iconoir"~~
+1. Community Plugins > Browse
+2. Search for "iconoir"
 
 or:
 
-1. download the latest [release archive](https://github.com/gapmiss/iconoir-icons/releases/download/1.0.0/iconoir-icons.zip)
-2. uncompress the downloaded archive
-3. move the `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
-4.  Settings > Community plugins > reload **Installed plugins**
-5.  enable plugin
-
-or:
-
-1.  download `dist/main.js`, `manifest.json` & `styles.css`
+1.  download `main.js`, `manifest.json` & `styles.css` from the latest [release](https://github.com/gapmiss/iconoir-icons/releases/latest)
 2.  create a new folder `/path/to/vault/.obsidian/plugins/iconoir-icons`
 3.  move all 3 files to `/path/to/vault/.obsidian/plugins/iconoir-icons`
 4.  Settings > Community plugins > reload **Installed plugins**
 5.  enable plugin
-
-## screenshots
-
-![iconoir-icons-light](assets/iconoir-icons-light.png)
-
-![iconoir-icons-dark](assets/iconoir-icons-dark.png)
 
 ## development
 
@@ -220,8 +206,3 @@ npm run dev
 
 1.  open `Settings` → `Community plugins`
 2.  enable the `Iconoir Icons` plugin.
-
-## caveats
-
-- 2023-02-09 None known at this time.
-- 2023-05-27 None known at this time.
