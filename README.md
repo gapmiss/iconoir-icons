@@ -16,6 +16,31 @@ A plugin for creating & displaying customized SVG [Iconoir Icons](https://iconoi
 
 ![iconoir suggester](assets/iconoir-suggester-2.gif)
 
+## Installation
+
+[Install from community.obsidian.md](https://community.obsidian.md/plugins/iconoir-icons)
+
+From Obsidian's settings or preferences:
+
+1. Community Plugins > Browse
+2. Search for "Iconoir Icons"
+
+Manually:
+
+1. download the latest [release](https://github.com/gapmiss/iconoir-icons/releases/latest) archive
+2. uncompress the downloaded archive
+3. move the `iconoir-icons` folder to `/path/to/vault/.obsidian/plugins/` 
+4.  Settings > Community plugins > reload **Installed plugins**
+5.  enable plugin
+
+or:
+
+1.  download `main.js`, `manifest.json` & `styles.css` from the latest [release](https://github.com/gapmiss/iconoir-icons/releases/latest)
+2.  create a new folder `/path/to/vault/.obsidian/plugins/iconoir-icons`
+3.  move all 3 files to `/path/to/vault/.obsidian/plugins/iconoir-icons`
+4.  Settings > Community plugins > reload **Installed plugins**
+5.  enable plugin
+
 ## syntax
 
 To trigger the icon name suggestion interface, type the ampersand key twice(`&&`) and start typing a query.
