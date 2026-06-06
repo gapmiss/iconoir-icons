@@ -16,7 +16,7 @@ A plugin for creating & displaying customized SVG [Iconoir Icons](https://iconoi
 
 ![iconoir suggester](assets/iconoir-suggester-2.gif)
 
-## Installation
+## installation
 
 [Install from community.obsidian.md](https://community.obsidian.md/plugins/iconoir-icons)
 
@@ -194,21 +194,6 @@ strong {
  <icon-component>
 </li>
 ```
-
-## plugin installation
-
-From Obsidian's settings or preferences:
-
-1. Community Plugins > Browse
-2. Search for "iconoir"
-
-or:
-
-1.  download `main.js`, `manifest.json` & `styles.css` from the latest [release](https://github.com/gapmiss/iconoir-icons/releases/latest)
-2.  create a new folder `/path/to/vault/.obsidian/plugins/iconoir-icons`
-3.  move all 3 files to `/path/to/vault/.obsidian/plugins/iconoir-icons`
-4.  Settings > Community plugins > reload **Installed plugins**
-5.  enable plugin
 
 ## development
 
